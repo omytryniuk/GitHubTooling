@@ -10,9 +10,9 @@ exports.isValidEmail = function (email) {
   const senecaEmailFormat = /^[a-z]{3,}[0-9]{0,3}@myseneca.ca$/;
   // var senecaEmailFormat = /@myseneca.ca$/;
   if (senecaEmailFormat.test(email)) {
-    return 'valid';
+    return true;
   }
-  return 'invalid';
+  return false;
 };
 
 /**
